@@ -5,6 +5,8 @@ body {
     height: 100vh;
     width: 100vw;
 
+    overflow: hidden;
+
     background-color: rgb(23, 23, 23);
 
     font-family: 'Figtree';
@@ -93,7 +95,7 @@ aside p {
 }
 
 aside a {
-    margin-top: 10vh;
+    margin-top: 3rem;
     padding: 1vw;
     border: 1px solid white;
     border-radius: 40px;
