@@ -55,7 +55,7 @@ main {
 article {
     margin-top: 9em;
     margin-left: 8em;
-    margin-right: auto;
+    margin-right: auto; /* Zodat de zwarte balk rechts blijft */
     max-width: 30em;
     align-content: center;
     z-index: 1;
@@ -96,6 +96,8 @@ aside p {
     line-height: 1.4;
     color:white;
 }
+
+/* BUTTON */
 
 aside a {
     margin-top: 10vh;
