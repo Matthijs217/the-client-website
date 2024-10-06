@@ -30,7 +30,7 @@ main {
 
 article {
     margin-top: 9em;
-    margin-left: 8em;
+    margin-left: 1em;
     margin-right: auto;
     max-width: 30em;
     align-content: center;
@@ -61,6 +61,7 @@ aside {
     flex-direction: column;
     justify-content:center;
     align-items: center;
+    margin-left: 1em;
     width: 100vw;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.836);
@@ -71,6 +72,7 @@ aside {
 aside p {
     font-size: 16px;
     line-height: 1.4;
+    margin-left: 1em;
     /* max-width: 25em; */
     color:white;
 }
