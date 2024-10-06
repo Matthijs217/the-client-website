@@ -1,44 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-
+    
     height: 100vh;
     width: 100vw;
 
-    overflow: hidden;
-
     background-color: rgb(23, 23, 23);
-
     font-family: 'Figtree';
-    font-size: 16px;
-    line-height: 1.4;
 }
 
 /* MAIN */
-
-.rouwtaak2 {
-
-    position: absolute;
-    top: -21vw;
-    left: -3vw;
-    height: 57em;
-    width: 35em;
-
-    background: url(.png);
-
-
-}
-
-.rain {
-
-    position: absolute;
-    height: 50vw;
-    width: 80vw;
-    top: 0;
-    left: 0vw;
-    background: url(.png);
-
-}
     
 main {
 
@@ -50,6 +21,9 @@ main {
 
     justify-content: center;
     align-items: center;
+    background: url(/assets/rouwtaak2.png) no-repeat  ;
+
+
 }
 
 /* ARTICLE */
@@ -68,7 +42,7 @@ article h1 {
     color: rgb(245, 245, 245);
     margin: 0;
     font-family: 'Calvino Grande Trial';
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 750;
     text-shadow: 2px 1px black;
 
@@ -76,7 +50,7 @@ article h1 {
 
 article p {
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Figtree';
     text-shadow: 1px 1px black;
 }
@@ -86,11 +60,11 @@ article p {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
-    padding: 3vw;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.736);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
     z-index: 1;
 
 }
@@ -98,13 +72,13 @@ aside {
 aside p {
     font-size: 16px;
     line-height: 1.4;
-    max-width: 25em;
+    /* max-width: 25em; */
     color:white;
 }
 
 aside a {
     margin-top: 1em;
-    padding: 1vw;
+    padding: 1em;
     border: 2px solid white;
     border-radius: 40px;
     color:white;
