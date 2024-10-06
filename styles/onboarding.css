@@ -1,53 +1,29 @@
 body {
     margin: 0;
     padding: 0;
-
+    
     height: 100vh;
     width: 100vw;
 
-    overflow: hidden;
-
     background-color: rgb(23, 23, 23);
-
     font-family: 'Figtree';
-    font-size: 16px;
-    line-height: 1.4;
 }
 
 /* MAIN */
-
-.rouwtaak2 {
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 50em;
-    width: 35em;
-
-    background: url(.png);
-
-
-}
-
-.rain {
-
-    position: absolute;
-    height: 50vw;
-    width: 80vw;
-    top: 0;
-    left: 0vw;
-    background: url(.png);
-
-}
     
-
 main {
 
     height: 100vh;
     width: 100vw;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    background: url(/assets/rouwtaak2.png) no-repeat  ;
+
+
 }
 
 /* ARTICLE */
@@ -55,7 +31,7 @@ main {
 article {
     margin-top: 9em;
     margin-left: 8em;
-    margin-right: auto; /* Zodat de zwarte balk rechts blijft */
+    margin-right: auto;
     max-width: 30em;
     align-content: center;
     z-index: 1;
@@ -65,8 +41,9 @@ article h1 {
     color: rgb(245, 245, 245);
     margin: 0;
     font-family: 'Calvino Grande Trial';
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 750;
+    text-shadow: 2px 1px black;
 
 }
 
@@ -74,7 +51,7 @@ article p {
     color: white;
     font-size: 22px;
     font-family: 'Figtree';
-
+    text-shadow: 1px 1px black;
 }
 
 /* ASIDE */
@@ -82,28 +59,71 @@ article p {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
+    width: 100vw;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    z-index: 1;
 
-    max-width: 17rem;
-    padding: 3vw;
-
-    background-color: black;
 }
 
 aside p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.4;
+    /* max-width: 25em; */
     color:white;
 }
 
 /* BUTTON */
 
 aside a {
-    margin-top: 10vh;
-    padding: 1vw;
+    margin-top: 1em;
+    padding: 1em;
     border: 2px solid white;
     border-radius: 40px;
     color:white;
-    
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: rgb(243, 239, 239);
+    color: black;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+    main {
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    article {
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right: auto;
+    }
+    article h1 {
+        font-size: 70px;
+    }
+    article p {
+        font-size: 20px;
+        max-width: 20em;
+    }
+    aside {
+        max-width: 17rem;
+    }
+}
+
+@media (min-width: 800px) {
+    article {
+        margin-top: 5em;
+        margin-left: 5em;
+    }
+    article h1 {
+        font-size: 70px;
+    }
+    article p {
+        font-size: 22px;
+    }
 }
