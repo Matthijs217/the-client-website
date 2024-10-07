@@ -20,7 +20,7 @@ main {
 
     justify-content: center;
     align-items: center;
-    background: url(../assets/rouwtaak2.png) no-repeat  ;
+    background: url(../assets/test.svg) no-repeat  ;
 }
 
 /* ARTICLE */
@@ -124,7 +124,7 @@ aside a:hover {
     article h1 {
         font-size: 70px;
     }
-    
+
     article p {
         font-size: 22px;
     }
