@@ -88,7 +88,7 @@ body {
         display: flex;
         justify-content: center;
         gap: 1vw;
-        margin: 7em;
+        margin-top: 9em;
     }
 
     .button-container .een {
@@ -101,6 +101,7 @@ body {
         background-color: transparent;
         color: white;
         cursor: pointer;
+        z-index: 1;
     }
     .button-container .twee {
         height: 60px;
@@ -112,6 +113,7 @@ body {
         background-color: transparent;
         color: white;
         cursor: pointer;
+        z-index: 1;
     }
     
     .button-container button:disabled {
@@ -123,7 +125,7 @@ body {
         position: absolute;
         bottom: 0;
         left: 10%;
-        z-index: 999;
+        z-index: -1;
     }
 
 

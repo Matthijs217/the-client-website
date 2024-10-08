@@ -45,18 +45,20 @@ function updateTitle() {
 }
 
 function nextPage() {
+    console.log("Next button clicked"); // Controleer of dit werkt
     if (currentStep < titles.length - 1) {
         currentStep++;
-        updateProgressBlocks(); // Update de blokken
-        updateTitle(); // Verander de titel
+        updateProgressBlocks(); 
+        updateTitle(); 
     }
 }
 
 function prevPage() {
+    console.log("Previous button clicked"); // Controleer of dit werkt
     if (currentStep > 0) {
         currentStep--;
-        updateProgressBlocks(); // Update de blokken
-        updateTitle(); // Verander de titel
+        updateProgressBlocks();
+        updateTitle(); 
     }
 }
 
