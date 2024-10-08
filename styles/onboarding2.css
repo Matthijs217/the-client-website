@@ -3,7 +3,7 @@ body {
     padding: 0;
 
     min-height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
     background-color: rgb(23, 23, 23);
     font-family: 'Figtree';
 }
@@ -28,7 +28,7 @@ body {
     }
 
     header h1 {
-        margin: 3vh 3vw;
+        margin: 3vh 4vw;
         color: rgb(245, 245, 245);
         font-family: 'Calvino Grande Trial';
         font-size: 50px;
@@ -39,7 +39,7 @@ body {
     .progress-container {
         display: flex;
         justify-content: flex-start;
-        margin-left: 3vw;
+        margin-left: 4vw;
         width: 80%; /* Breedte van de blokjes in totaal */
     }
     
@@ -61,6 +61,7 @@ body {
     }
 
     article {
+        margin-top: 1em;
         margin-left: 4vw;
         min-height: 50vh;
     }
@@ -128,4 +129,61 @@ body {
         width: 100%;
         bottom: -10vh;
         z-index: -1;
+    }
+
+    @media (min-width: 450px) {
+        article {
+            min-height: 60vh;
+            font-size: 20px;
+        }
+        article h2 {
+            font-size: 60px;
+        }
+        article p {
+            font-size: 20px;
+        }
+        .button-container .een,
+        .button-container .twee {
+            height: 70px;
+            width: 70px;
+            font-size: 20px;
+        }
+    }
+
+    @media (min-width: 700px) {
+        article {
+            min-height: 60vh;
+            font-size: 20px;
+        }
+        article h2 {
+            font-size: 60px;
+        }
+        article p {
+            font-size: 20px;
+        }
+        .button-container .een,
+        .button-container .twee {
+            height: 70px;
+            width: 70px;
+            font-size: 20px;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        article {
+            min-height: 60vh;
+            font-size: 20px;
+        }
+        article h2 {
+            font-size: 70px;
+        }
+        article p {
+            font-size: 25px;
+        }
+        .button-container .een,
+        .button-container .twee {
+            height: 70px;
+            width: 70px;
+            font-size: 20px;
+        }
     }
