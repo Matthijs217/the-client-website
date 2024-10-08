@@ -40,7 +40,7 @@ body {
         display: flex;
         justify-content: flex-start;
         margin-left: 3vw;
-        width: 90%; /* Breedte van de blokjes in totaal */
+        width: 80%; /* Breedte van de blokjes in totaal */
     }
     
     .progress-block {
@@ -122,7 +122,7 @@ body {
         cursor: not-allowed;
     }
 
-    img {
+    svg {
         position: absolute;
         height:500px;
         width: 100%;
