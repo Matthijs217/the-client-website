@@ -1,15 +1,15 @@
 const titles = ["Privacy", "Tools", "Rouwtaken", "Rouwtaak een", "Rouwtaak twee", "Rouwtaak drie", "Rouwtaak vier", "Persoonlijke Reis", "Ontmoet Yana", "Jouw keuze"];
 const texts = [
     "Jouw privacy en comfort zijn onze prioriteit. Alles wat je deelt blijft vertrouwelijk.",
-    "We hebben tools samengesteld om je te ondersteunen in je reis door rouw. Straks geven we een rondleiding binnen de omgeving. Laten we nu eerst samen het landschap van rouw verkennen.", 
-    "Onze methode is gebaseerd op de erkende rouwtaken van William Worden, Amerikaans rouwexpert, zorgvuldig samengesteld om jou te ondersteunen tijdens je rouwreis. Ontdek met ons de betekenis en steun die het jou kan bieden.", 
+    "We hebben tools samengesteld om je te ondersteunen in je reis door rouw. Straks geven we een rondleiding binnen de omgeving. <br><br>Laten we nu eerst samen het landschap van rouw verkennen.", 
+    "Onze methode is gebaseerd op de erkende rouwtaken van William Worden, Amerikaans rouwexpert, zorgvuldig samengesteld om jou te ondersteunen tijdens je rouwreis. <br><br>Ontdek met ons de betekenis en steun die het jou kan bieden.", 
     "Ontdek hoe je de realiteit van het verlies kunt omarmen", 
     "Sta jezelf toe om de pijn te voelen en leer om deze op jouw manier te verwerken.",
     "Vind jouw weg in een wereld die nu anders is door het verlies van je dierbare.",
     "Ontdek hoe je een nieuw pad kunt inslaan terwijl je het verlies een betekenisvolle plek geeft in je leven.",
-    "Nu je meer weet over de rouwtaken zelf, is het tijd om jouw persoonlijke reis te samen te stellen. Rouw is een uniek proces en niet lineair, daarom bieden we ondersteuning om je verder te helpen.",
-    "Maak kennis met Yana, jouw persoonlijke digitale hulp. Yana is getraind met informatie uit een breed scala literatuur over rouw. Yana kan je voorzien van een programma dat bij jou aansluit.",
-    "Als Yana iets vraagt wat je liever niet beantwoordt, is dat helemaal oké. Je kunt vragen overslaan wanneer jij dat wilt, je hoeft dit alleen maar aan te geven. Liever zelf kiezen waar je start? Dat is ook mogelijk. Kies hieronder dan voor je eigen pad. Je kan op elk moment schakelen tussen de verschillende rouwtaken. Jouw reis, jouw tempo."
+    "Nu je meer weet over de rouwtaken zelf, is het tijd om jouw persoonlijke reis te samen te stellen. <br><br>Rouw is een uniek proces en niet lineair, daarom bieden we ondersteuning om je verder te helpen.",
+    "Maak kennis met Yana, jouw persoonlijke digitale hulp. Yana is getraind met informatie uit een breed scala literatuur over rouw. <br><br>Yana kan je voorzien van een programma dat bij jou aansluit.",
+    "Als Yana iets vraagt wat je liever niet beantwoordt, is dat helemaal oké. Je kunt vragen overslaan wanneer jij dat wilt, je hoeft dit alleen maar aan te geven. <br><br>Liever zelf kiezen waar je start? Dat is ook mogelijk. Kies hieronder dan voor je eigen pad. Je kan op elk moment schakelen tussen de verschillende rouwtaken. <br><br>Jouw reis, jouw tempo."
 ];
 
 // Array met paden naar SVG-bestanden
@@ -40,6 +40,39 @@ function createProgressBlocks() {
     }
     updateProgressBlocks();
     updateContent();
+    updateButtonClasses();
+}
+
+function updateButtonClasses() {
+    const buttonContainer = document.getElementById("button-container");
+    const prevButton = buttonContainer.querySelector("button:first-child");
+    const nextButton = buttonContainer.querySelector("button:last-child");
+
+    if (currentStep === totalSteps - 1) {
+        prevButton.className = "een-end";
+        nextButton.className = "twee-end";
+        
+        // Verwijder de bestaande onclick-handlers
+        prevButton.onclick = null;
+        nextButton.onclick = null;
+        
+        // Voeg nieuwe onclick-handlers toe voor de laatste pagina
+        prevButton.onclick = function() {
+            console.log("Gepersonaliseerd pad gekozen");
+            // Voeg hier de gewenste functionaliteit toe
+        };
+        nextButton.onclick = function() {
+            console.log("Eigen pad gekozen");
+            // Voeg hier de gewenste functionaliteit toe
+        };
+    } else {
+        prevButton.className = "een";
+        nextButton.className = "twee";
+        
+        // Herstel de originele onclick-handlers
+        prevButton.onclick = prevPage;
+        nextButton.onclick = nextPage;
+    }
 }
 
 function updateProgressBlocks() {
@@ -62,9 +95,21 @@ function updateContent() {
     const svgContainer = document.getElementById("svg-container");
 
     titleElement.textContent = titles[currentStep];
-    textElement.textContent = texts[currentStep];
-    
-    // Laad de SVG via fetch
+    textElement.innerHTML = texts[currentStep];
+
+    // Verander de tekst van de knoppen op de laatste pagina
+    const buttonPrev = document.querySelector(".een, .een-end");
+    const buttonNext = document.querySelector(".twee, .twee-end");
+
+    if (currentStep === totalSteps - 1) {
+        buttonPrev.textContent = "Gepersonaliseerd";
+        buttonNext.textContent = "Eigen pad";
+    } else {
+        buttonPrev.textContent = "<";
+        buttonNext.textContent = ">";
+    }
+
+    // Laad de SVG
     fetch(svgs[currentStep])
     .then(response => response.text())
     .then(svgContent => {
@@ -77,12 +122,12 @@ function updateContent() {
     .catch(error => console.error('Error loading the SVG:', error));
 }
 
-
 function nextPage() {
     if (currentStep < titles.length - 1) {
         currentStep++;
         updateProgressBlocks(); 
         updateContent();
+        updateButtonClasses(); // Voeg deze regel toe
     }
 }
 
@@ -91,6 +136,7 @@ function prevPage() {
         currentStep--;
         updateProgressBlocks();
         updateContent();
+        updateButtonClasses(); // Voeg deze regel toe
     }
 }
 

@@ -40,7 +40,7 @@ body {
         display: flex;
         justify-content: flex-start;
         margin-left: 4vw;
-        width: 80%; /* Breedte van de blokjes in totaal */
+        width: 95%; /* Breedte van de blokjes in totaal */
     }
     
     .progress-block {
@@ -63,7 +63,7 @@ body {
     article {
         margin-top: 1em;
         margin-left: 4vw;
-        min-height: 50vh;
+        min-height: 45vh;
     }
 
     article h2 {
@@ -72,6 +72,7 @@ body {
         font-size: 50px;
         font-weight: 650;
         text-shadow: 2px 1px black;
+        margin-top: 1vh;
     }
 
     article p {
@@ -93,18 +94,7 @@ body {
         gap: 1vw;
     }
 
-    .button-container .een {
-        height: 60px;
-        width: 60px;
-        /* padding: 10px 15px;
-        margin: 10px; */
-        border: 1px solid white;
-        border-radius: 80px;
-        background-color: transparent;
-        color: white;
-        cursor: pointer;
-        z-index: 1;
-    }
+    .button-container .een,
     .button-container .twee {
         height: 60px;
         width: 60px;
@@ -117,7 +107,21 @@ body {
         cursor: pointer;
         z-index: 1;
     }
-    
+
+    .button-container .een-end,
+    .button-container .twee-end {
+        height: 60px;
+        width: 140px;
+        /* padding: 10px 15px;
+        margin: 10px; */
+        border: 1px solid white;
+        border-radius: 80px;
+        background-color: transparent;
+        color: white;
+        cursor: pointer;
+        z-index: 1;
+    }
+
     .button-container button:disabled {
         background-color: #888;
         cursor: not-allowed;
@@ -156,23 +160,27 @@ body {
     }
 
     #svg-container .svg-step-3 {
-        bottom: 10vh;
-        left: 2vh;
+        position: absolute;
+        bottom: 35vh;
+        left: 0;
     }
 
     #svg-container .svg-step-4 {
-        bottom: 10vh;
-        left: 2vh;
+        position: absolute;
+        bottom: 33vh;
+        left: 10vh;
     }
 
     #svg-container .svg-step-5 {
-        bottom: 10vh;
-        left: 2vh;
+        position: absolute;
+        bottom: 33vh;
+        left: 10vh;
     }
 
     #svg-container .svg-step-6 {
-        bottom: 10vh;
-        left: 2vh;
+        position: absolute;
+        bottom: 33vh;
+        left: 10vh;
     }
 
     #svg-container .svg-step-7 {
