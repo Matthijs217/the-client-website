@@ -21,6 +21,7 @@ De onboarding is 10 pagina's lang in 1 pagina. Je begint bij de privacy uitleg e
 
 ## Bekijk website:
 
+https://matthijs217.github.io/the-client-website/pages/onboarding.html
 
 ## Kenmerken
 
