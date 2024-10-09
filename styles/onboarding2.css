@@ -142,9 +142,11 @@ body {
     }
 
     #svg-container .svg-step-1 {
-        bottom: 10vh;
-        left: 2vh;
-        filter: blur(5em);
+        height: 600px;
+        width: 600px;
+        bottom: 0;
+        left: 0;
+        filter: blur(7em);
     }
 
     #svg-container .svg-step-2 {
@@ -186,6 +188,8 @@ body {
     }
 
     #svg-container .svg-step-9 {
+        height: 600px;
+        width: 600px;
         bottom: 10vh;
         left: 2vh;
         filter: blur(5em);
@@ -231,7 +235,7 @@ body {
 
     @media (min-width: 1000px) {
         article {
-            min-height: 60vh;
+            min-height: 55vh;
             font-size: 20px;
         }
         article h2 {

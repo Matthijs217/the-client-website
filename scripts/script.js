@@ -72,8 +72,6 @@ function updateContent() {
         const svgElement = svgContainer.querySelector('svg');
         if (svgElement) {
             svgElement.classList.add(`svg-step-${currentStep}`);
-            // Voeg deze regel toe om te controleren of de SVG is geladen
-            console.log('SVG loaded:', svgElement);
         }
     })
     .catch(error => console.error('Error loading the SVG:', error));

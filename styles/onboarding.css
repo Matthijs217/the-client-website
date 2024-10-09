@@ -20,7 +20,9 @@ main {
 
     justify-content: center;
     align-items: center;
-    background: url(../assets/rouwtaak2mesh.png) no-repeat  ;
+    background: url(../assets/rouwtaak2mesh.png) no-repeat;
+    background-size: 500px 600px;
+
 }
 
 /* ARTICLE */
