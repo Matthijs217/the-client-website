@@ -123,12 +123,72 @@ body {
         cursor: not-allowed;
     }
 
-    svg {
+    /* SVG'S */
+
+    #svg-container {
         position: absolute;
         height:500px;
         width: 100%;
+        right: 0;
         bottom: -10vh;
         z-index: -1;
+    }
+
+    #svg-container .svg-step-0 {
+        position: absolute;
+        bottom: 10vh;
+        right: 0;
+        filter: blur(5em);
+    }
+
+    #svg-container .svg-step-1 {
+        bottom: 10vh;
+        left: 2vh;
+        filter: blur(5em);
+    }
+
+    #svg-container .svg-step-2 {
+        bottom: 10vh;
+        left: 2vh;
+        filter: blur(5em);
+    }
+
+    #svg-container .svg-step-3 {
+        bottom: 10vh;
+        left: 2vh;
+    }
+
+    #svg-container .svg-step-4 {
+        bottom: 10vh;
+        left: 2vh;
+    }
+
+    #svg-container .svg-step-5 {
+        bottom: 10vh;
+        left: 2vh;
+    }
+
+    #svg-container .svg-step-6 {
+        bottom: 10vh;
+        left: 2vh;
+    }
+
+    #svg-container .svg-step-7 {
+        bottom: 10vh;
+        left: 2vh;
+        filter: blur(5em);
+    }
+
+    #svg-container .svg-step-8 {
+        bottom: 10vh;
+        left: 2vh;
+        filter: blur(5em);
+    }
+
+    #svg-container .svg-step-9 {
+        bottom: 10vh;
+        left: 2vh;
+        filter: blur(5em);
     }
 
     @media (min-width: 450px) {
