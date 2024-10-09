@@ -2,7 +2,7 @@
 
 Welkom bij het begin van Drop & Heal. Deze website is met HTML, CSS en JavaScript gemaakt. 
 
-De website bestaat nu uit de "homepage" voor de onboarding, volgend door de onboarding met wisselende tekst en layout.
+De website bestaat nu uit de "homepage" voor de onboarding, volgend door de onboarding met wisselende tekst, achtergrond en layout.
 
 ## Homepagina:
 
