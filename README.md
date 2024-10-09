@@ -1,27 +1,29 @@
 # The Client - Website
 
-Ontwerp en maak een website voor een opdrachtgever en bespreek het resultaat tijdens de Sprint Review.
+Welkom bij het begin van Drop & Heal. Deze website is met HTML, CSS en JavaScript gemaakt. 
 
-De instructie van deze leertaak staan in de [INSTRUCTIONS.md](https://github.com/fdnd-task/the-client-website/blob/main/docs/INSTRUCTIONS.md)
+De website bestaat nu uit de "homepage" voor de onboarding, volgend door de onboarding met wisselende tekst en layout.
 
+## Homepagina:
 
+Op de home pagina staat de belangrijkste informatie. Uitleg over Drop & Heal en informatie voordat je je reis gaat starten. 
 
-## Inhoudsopgave Readme
+Onderaan bij de tekst staat een knopje om je reis te starten. Deze knop verwijst je dan naar de start van de onboarding.
 
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+## Onboarding:
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+De onboarding is 10 pagina's lang in 1 pagina. Je begint bij de privacy uitleg en klikt d.m.v de knopjes door tot de rouwtaken en jou eigen keuze voor de gepersonaliseerde of eigen start.
+
+## Bekijk website:
+
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
+Er is gebruik gemaakt van HTML, CSS en JS
 
+Op de main pagina heb ik een flex gebruikt met een margin-auto om de aside helemaal rechts te houden continu. Totdat je screen-width onder de 800 pixels komt en dan scaled die hem naar telefoon layout, zo door tot een iphone formaat. 
+
+De onboarding heeft een vaste layout (de beginpagina) daarna word alles veranderd d.m.v javascript. 
 
 ## Licentie
 
