@@ -52,18 +52,14 @@ function updateButtonClasses() {
         prevButton.className = "een-end";
         nextButton.className = "twee-end";
         
-        // Verwijder de bestaande onclick-handlers
         prevButton.onclick = null;
         nextButton.onclick = null;
         
-        // Voeg nieuwe onclick-handlers toe voor de laatste pagina
         prevButton.onclick = function() {
             console.log("Gepersonaliseerd pad gekozen");
-            // Voeg hier de gewenste functionaliteit toe
         };
         nextButton.onclick = function() {
             console.log("Eigen pad gekozen");
-            // Voeg hier de gewenste functionaliteit toe
         };
     } else {
         prevButton.className = "een";
@@ -97,7 +93,6 @@ function updateContent() {
     titleElement.textContent = titles[currentStep];
     textElement.innerHTML = texts[currentStep];
 
-    // Verander de tekst van de knoppen op de laatste pagina
     const buttonPrev = document.querySelector(".een, .een-end");
     const buttonNext = document.querySelector(".twee, .twee-end");
 
@@ -109,7 +104,6 @@ function updateContent() {
         buttonNext.textContent = ">";
     }
 
-    // Laad de SVG
     fetch(svgs[currentStep])
     .then(response => response.text())
     .then(svgContent => {
@@ -127,7 +121,7 @@ function nextPage() {
         currentStep++;
         updateProgressBlocks(); 
         updateContent();
-        updateButtonClasses(); // Voeg deze regel toe
+        updateButtonClasses();
     }
 }
 
@@ -136,7 +130,7 @@ function prevPage() {
         currentStep--;
         updateProgressBlocks();
         updateContent();
-        updateButtonClasses(); // Voeg deze regel toe
+        updateButtonClasses();
     }
 }
 
