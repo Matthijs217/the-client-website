@@ -9,15 +9,17 @@ De website bestaat nu uit de "homepage" voor de onboarding, volgend door de onbo
 Op de home pagina staat de belangrijkste informatie. Uitleg over Drop & Heal en informatie voordat je je reis gaat starten. 
 
 Onderaan bij de tekst staat een knopje om je reis te starten. Deze knop verwijst je dan naar de start van de onboarding.
-![image](https://github.com/user-attachments/assets/3c54828a-548e-457e-af47-3a0bb4d96195)
-![image](https://github.com/user-attachments/assets/abf98305-3085-4498-bbb9-82d48e167b55)
+![image](https://github.com/user-attachments/assets/a1cbcca1-3635-44ea-85dc-cfc971761e56)
+![image](https://github.com/user-attachments/assets/10e94804-8889-4338-98be-fe84d8c480d6)
 
 ## Onboarding:
 
-De onboarding is 10 pagina's lang in 1 pagina. Je begint bij de privacy uitleg en klikt d.m.v de knopjes door tot de rouwtaken en jou eigen keuze voor de gepersonaliseerde of eigen start.
+De onboarding is nu 2 pagina's lang. Je begint bij de algemene uitleg, daarna komt de uitleg per rouwtaak en daarna volgt de vragenlijst van 12 vragen.
 
-![image](https://github.com/user-attachments/assets/de883992-e841-409a-becd-f4ceb683ba3b)
-![image](https://github.com/user-attachments/assets/f2b82fab-fb8c-4bbe-8154-13cc4c3e0e50)
+![image](https://github.com/user-attachments/assets/6712aa3a-7538-4c71-b5fb-2a49f13af741)
+![image](https://github.com/user-attachments/assets/8e6a850d-dc62-4e8d-9f3c-a8b9c8b00c20)
+![image](https://github.com/user-attachments/assets/bfbc7b1b-0f79-4b37-bf88-a352997f3a7b)
+![image](https://github.com/user-attachments/assets/3c7ae6ad-0f2c-4ee5-be42-ad7aafbaf237)
 
 ## Bekijk website:
 
@@ -27,9 +29,9 @@ https://matthijs217.github.io/the-client-website/pages/onboarding.html
 
 Er is gebruik gemaakt van HTML, CSS en JS
 
-Op de main pagina heb ik een flex gebruikt met een margin-auto om de aside helemaal rechts te houden continu. Totdat je screen-width onder de 800 pixels komt en dan scaled die hem naar telefoon layout, zo door tot een iphone formaat. 
+Op de main pagina heb ik een flex gebruikt met een absolute op de aside, zodat die mooi aan de rechterkant blijft. Vanaf de 650 pixels gaat de telefoon layout naar desktop layout. 
 
-De onboarding heeft een vaste layout (de beginpagina) daarna word alles veranderd d.m.v javascript. 
+De onboarding heeft een flex en grid layout, verschilt per telefoon of desktop. D.m.v de hover op de articles komen de rouwtaken mooi naar voren als je eroverheen gaat. De vragenlijst heeft allemaal dezelfde css, aangezien ze dezelfde layout hebben. 
 
 ## Licentie
 
